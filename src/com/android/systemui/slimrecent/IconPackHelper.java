@@ -29,7 +29,7 @@ import android.content.res.XmlResourceParser;
 import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 
-import com.android.internal.util.aicp.AbstractIconPackHelper;
+import com.android.internal.util.rr.AbstractIconPackHelper;
 
 import java.io.IOException;
 import java.io.InputStream;
