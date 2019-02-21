@@ -18,12 +18,12 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Sim recents -->
-  <string name="slim_recent_keyguard">Oldja fel az eszközt az előzmények megtekintéséhez</string>
-  <string name="slim_recent_pinned">Oldja fel a képernyő rögzítését az előzmények megtekintéséhez</string>
-  <!-- Slim recents app sidebar queue app toast -->
-  <string name="toast_recents_queue_app">%s indítása az előzmények bezárása után</string>
-  <string name="toast_recents_cancel_queued_app">Alkalmazás indításának megszakítása</string>
-  <!-- Slim recents membar -->
-  <string name="slim_recents_free_ram">%1$d MB szabad memória</string>
+    <!-- Sim recents -->
+    <string name="slim_recent_keyguard">Oldja fel az eszközt az előzmények megtekintéséhez</string>
+    <string name="slim_recent_pinned">Oldja fel a képernyő rögzítését az előzmények megtekintéséhez</string>
+    <!-- Slim recents app sidebar queue app toast -->
+    <string name="toast_recents_queue_app">%s indítása az előzmények bezárása után</string>
+    <string name="toast_recents_cancel_queued_app">Alkalmazás indításának megszakítása</string>
+    <!-- Slim recents membar -->
+    <string name="slim_recents_free_ram">%1$d MB szabad memória</string>
 </resources>

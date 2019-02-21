@@ -18,12 +18,12 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Sim recents -->
-  <string name="slim_recent_keyguard">قم بفك قفل جهازك لعرض التطبيقات الحديثة</string>
-  <string name="slim_recent_pinned">قم بإلغاء تثبيت الشاشة لعرض التطبيقات الحديثة</string>
-  <!-- Slim recents app sidebar queue app toast -->
-  <string name="toast_recents_queue_app">شغل %s بعد إغلاق التطبيقات الحديثة</string>
-  <string name="toast_recents_cancel_queued_app">تم إلغاء تشغيل التطبيق</string>
-  <!-- Slim recents membar -->
-  <string name="slim_recents_free_ram">الذاكرة:%1$d Mb</string>
+    <!-- Sim recents -->
+    <string name="slim_recent_keyguard">قم بفك قفل جهازك لعرض التطبيقات الحديثة</string>
+    <string name="slim_recent_pinned">قم بإلغاء تثبيت الشاشة لعرض التطبيقات الحديثة</string>
+    <!-- Slim recents app sidebar queue app toast -->
+    <string name="toast_recents_queue_app">شغل %s بعد إغلاق التطبيقات الحديثة</string>
+    <string name="toast_recents_cancel_queued_app">تم إلغاء تشغيل التطبيق</string>
+    <!-- Slim recents membar -->
+    <string name="slim_recents_free_ram">الذاكرة:%1$d Mb</string>
 </resources>

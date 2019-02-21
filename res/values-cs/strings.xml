@@ -18,12 +18,12 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Sim recents -->
-  <string name="slim_recent_keyguard">Odemkněte zařízení k prohlédnutí nedávných aplikací</string>
-  <string name="slim_recent_pinned">Odpojit obrazovku pro zobrazení nedávných aplikací</string>
-  <!-- Slim recents app sidebar queue app toast -->
-  <string name="toast_recents_queue_app">Spustit %s po zavření nedávných</string>
-  <string name="toast_recents_cancel_queued_app">Zrušit spouštění aplikací</string>
-  <!-- Slim recents membar -->
-  <string name="slim_recents_free_ram">RAM: %1$d MB volného místa</string>
+    <!-- Sim recents -->
+    <string name="slim_recent_keyguard">Odemkněte zařízení k prohlédnutí nedávných aplikací</string>
+    <string name="slim_recent_pinned">Odpojit obrazovku pro zobrazení nedávných aplikací</string>
+    <!-- Slim recents app sidebar queue app toast -->
+    <string name="toast_recents_queue_app">Spustit %s po zavření nedávných</string>
+    <string name="toast_recents_cancel_queued_app">Zrušit spouštění aplikací</string>
+    <!-- Slim recents membar -->
+    <string name="slim_recents_free_ram">RAM: %1$d MB volného místa</string>
 </resources>

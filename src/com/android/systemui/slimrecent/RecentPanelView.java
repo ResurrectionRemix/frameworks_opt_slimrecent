@@ -1113,9 +1113,9 @@ public class RecentPanelView {
                         // The first tasks are always added to the task list.
                         addCard(item, false);
                     } else {
-                        /*if (mExpandedMode == EXPANDED_MODE_ALWAYS) {
+                        if (mExpandedMode == EXPANDED_MODE_ALWAYS) {
                             oldState |= EXPANDED_STATE_BY_SYSTEM;
-                        }*/
+                        }
                         item.setExpandedState(oldState);
                         // Favorite tasks are added next. Media playing and non favorite
                         // we hold for a short time in an extra list.

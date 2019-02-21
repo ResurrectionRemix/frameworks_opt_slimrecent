@@ -18,12 +18,12 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Sim recents -->
-  <string name="slim_recent_keyguard">Buka kunci perangkat anda untuk melihat recent</string>
-  <string name="slim_recent_pinned">Lepas sematan layar untuk melihat recent</string>
-  <!-- Slim recents app sidebar queue app toast -->
-  <string name="toast_recents_queue_app">Jalankan %s setelah keluar dari recent</string>
-  <string name="toast_recents_cancel_queued_app">Menjalankan aplikasi dibatalkan</string>
-  <!-- Slim recents membar -->
-  <string name="slim_recents_free_ram">RAM: %1$d MB bebas</string>
+    <!-- Sim recents -->
+    <string name="slim_recent_keyguard">Buka kunci perangkat anda untuk melihat recent</string>
+    <string name="slim_recent_pinned">Lepas sematan layar untuk melihat recent</string>
+    <!-- Slim recents app sidebar queue app toast -->
+    <string name="toast_recents_queue_app">Jalankan %s setelah keluar dari recent</string>
+    <string name="toast_recents_cancel_queued_app">Menjalankan aplikasi dibatalkan</string>
+    <!-- Slim recents membar -->
+    <string name="slim_recents_free_ram">RAM: %1$d MB bebas</string>
 </resources>

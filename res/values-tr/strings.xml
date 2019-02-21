@@ -18,12 +18,12 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Sim recents -->
-  <string name="slim_recent_keyguard">Son uygulamaları görüntülemek için cihazın kilidini açın</string>
-  <string name="slim_recent_pinned">Son uygulamaları görmek için ekran sabitlemesini kaldırın</string>
-  <!-- Slim recents app sidebar queue app toast -->
-  <string name="toast_recents_queue_app">Son uygulamaları kapattıktan sonra %s başlat</string>
-  <string name="toast_recents_cancel_queued_app">Uygulama başlatma iptal edildi</string>
-  <!-- Slim recents membar -->
-  <string name="slim_recents_free_ram">RAM: %1$d MB boş</string>
+    <!-- Sim recents -->
+    <string name="slim_recent_keyguard">Son uygulamaları görüntülemek için cihazın kilidini açın</string>
+    <string name="slim_recent_pinned">Son uygulamaları görmek için ekran sabitlemesini kaldırın</string>
+    <!-- Slim recents app sidebar queue app toast -->
+    <string name="toast_recents_queue_app">Son uygulamaları kapattıktan sonra %s başlat</string>
+    <string name="toast_recents_cancel_queued_app">Uygulama başlatma iptal edildi</string>
+    <!-- Slim recents membar -->
+    <string name="slim_recents_free_ram">RAM: %1$d MB boş</string>
 </resources>

@@ -18,12 +18,12 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Sim recents -->
-  <string name="slim_recent_keyguard">解鎖您的裝置以檢視總覽</string>
-  <string name="slim_recent_pinned">解鎖畫面以查看總覽</string>
-  <!-- Slim recents app sidebar queue app toast -->
-  <string name="toast_recents_queue_app">在關閉總覽後啟動 %s</string>
-  <string name="toast_recents_cancel_queued_app">取消應用程式啟動</string>
-  <!-- Slim recents membar -->
-  <string name="slim_recents_free_ram">記憶體：還有 %1$d MB 可用</string>
+    <!-- Sim recents -->
+    <string name="slim_recent_keyguard">解鎖您的裝置以檢視總覽</string>
+    <string name="slim_recent_pinned">解鎖畫面以查看總覽</string>
+    <!-- Slim recents app sidebar queue app toast -->
+    <string name="toast_recents_queue_app">在關閉總覽後啟動 %s</string>
+    <string name="toast_recents_cancel_queued_app">取消應用程式啟動</string>
+    <!-- Slim recents membar -->
+    <string name="slim_recents_free_ram">記憶體：還有 %1$d MB 可用</string>
 </resources>

@@ -18,12 +18,12 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <!-- Sim recents -->
-  <string name="slim_recent_keyguard">履歴を表示するにはロック解除してください</string>
-  <string name="slim_recent_pinned">履歴を表示するには画面の固定を解除してください</string>
-  <!-- Slim recents app sidebar queue app toast -->
-  <string name="toast_recents_queue_app">履歴を閉じた後%sを起動します</string>
-  <string name="toast_recents_cancel_queued_app">アプリの起動をキャンセルしました</string>
-  <!-- Slim recents membar -->
-  <string name="slim_recents_free_ram">RAM: %1$d MB 空き</string>
+    <!-- Sim recents -->
+    <string name="slim_recent_keyguard">履歴を表示するにはロック解除してください</string>
+    <string name="slim_recent_pinned">履歴を表示するには画面の固定を解除してください</string>
+    <!-- Slim recents app sidebar queue app toast -->
+    <string name="toast_recents_queue_app">履歴を閉じた後%sを起動します</string>
+    <string name="toast_recents_cancel_queued_app">アプリの起動をキャンセルしました</string>
+    <!-- Slim recents membar -->
+    <string name="slim_recents_free_ram">RAM: %1$d MB 空き</string>
 </resources>

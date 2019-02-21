@@ -1442,14 +1442,9 @@ public class RecentController implements RecentPanelView.OnExitListener,
             this.mExpandMode = expandMode;
         }
 
-        /**
-         * Disable predictive animations. There is a bug in RecyclerView which causes views that
-         * are being reloaded to pull invalid ViewHolders from the internal recycler stack if the
-         * adapter size has decreased since the ViewHolder was recycled.
-         */
         @Override
         public boolean supportsPredictiveItemAnimations() {
-            return false;
+            return true;
         }
 
         @Override
@@ -1463,20 +1458,20 @@ public class RecentController implements RecentPanelView.OnExitListener,
                 case RecentPanelView.EXPANDED_MODE_AUTO:
                     space = 600;
                     break;
-                /*case RecentPanelView.EXPANDED_MODE_ALWAYS:
+                case RecentPanelView.EXPANDED_MODE_ALWAYS:
                     space = getScreenHeight();
-                    break;*/
+                    break;
             }
             return space;
         }
 
-        /*private int getScreenHeight() {
+        private int getScreenHeight() {
             Display display = mWindowManager.getDefaultDisplay();
             Point size = new Point();
             display.getSize(size);
             int screenHeight = size.y;
             return screenHeight;
-        }*/
+        }
     }
 
     protected void pinApp(int persistentTaskId) {
