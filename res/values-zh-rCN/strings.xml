@@ -18,12 +18,9 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Sim recents -->
     <string name="slim_recent_keyguard">解锁您的设备以查看最近使用</string>
     <string name="slim_recent_pinned">解锁屏幕以查看最近任务</string>
-    <!-- Slim recents app sidebar queue app toast -->
     <string name="toast_recents_queue_app">关闭最近任务后启动%s</string>
     <string name="toast_recents_cancel_queued_app">取消应用程序启动</string>
-    <!-- Slim recents membar -->
     <string name="slim_recents_free_ram">内存: %1$d MB可用</string>
 </resources>

@@ -18,12 +18,9 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Sim recents -->
     <string name="slim_recent_keyguard">Desbloqueie o dispositivo para ver as aplicações recentes</string>
     <string name="slim_recent_pinned">Soltar o ecrã para ver as aplicações recentes</string>
-    <!-- Slim recents app sidebar queue app toast -->
     <string name="toast_recents_queue_app">Lançar %s após fechar os recentes</string>
     <string name="toast_recents_cancel_queued_app">Lançamento da app cancelada</string>
-    <!-- Slim recents membar -->
     <string name="slim_recents_free_ram">RAM: %1$d MB livres</string>
 </resources>

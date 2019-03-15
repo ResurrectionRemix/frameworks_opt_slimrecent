@@ -18,10 +18,7 @@
  */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <!-- Sim recents -->
     <string name="slim_recent_keyguard">Розблокуйте пристрій для перегляду нещодавніх додатків</string>
-    <!-- Slim recents app sidebar queue app toast -->
     <string name="toast_recents_cancel_queued_app">Скасовано запуск додатка</string>
-    <!-- Slim recents membar -->
     <string name="slim_recents_free_ram">RAM: %1$d MB вільно</string>
 </resources>
