@@ -6,6 +6,17 @@
     <style name="Animation.SlimRecentScreen" parent="">
         <item name="android:windowEnterAnimation">@anim/recent_enter</item>
         <item name="android:windowExitAnimation">@anim/recent_exit</item>
+
+    </style>
+
+    <style name="Animation.SlimRecentScreenOrig.Right" parent="">
+        <item name="android:windowEnterAnimation">@anim/slim_recent_screen_enter_orig_right</item>
+        <item name="android:windowExitAnimation">@anim/slim_recent_screen_exit_orig_right</item>
+    </style>
+
+    <style name="Animation.SlimRecentScreenOrig.Left" parent="">
+        <item name="android:windowEnterAnimation">@anim/slim_recent_screen_enter_orig_left</item>
+        <item name="android:windowExitAnimation">@anim/slim_recent_screen_exit_orig_left</item>
     </style>
 
     <style name="card_header_favorite_icon">
@@ -13,5 +24,7 @@
         <item name="android:layout_height">@dimen/recent_favorite_icon_size</item>
         <item name="android:layout_margin">-2dp</item>
     </style>
+
+
 
 </resources>

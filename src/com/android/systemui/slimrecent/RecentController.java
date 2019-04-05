@@ -161,6 +161,7 @@ public class RecentController implements RecentPanelView.OnExitListener,
     private int mUserGravity;
     private int mPanelColor;
     private int mVisibility;
+    private int mEnterExitAnimation;
 
     TextView mMemText;
     ProgressBar mMemBar;
@@ -753,7 +754,19 @@ public class RecentController implements RecentPanelView.OnExitListener,
         params.gravity |= Gravity.CENTER_VERTICAL;
 
         // Set animation for our recent window.
-        params.windowAnimations = R.style.Animation_SlimRecentScreen;
+        switch (mEnterExitAnimation) {
+            case 1:
+                params.windowAnimations = R.style.Animation_SlimRecentScreen;
+                break;
+            case 0:
+            default:
+                if ((mMainGravity == Gravity.START) != forAppSidebar) {
+                    params.windowAnimations = R.style.Animation_SlimRecentScreenOrig_Left;
+                } else {
+                    params.windowAnimations = R.style.Animation_SlimRecentScreenOrig_Right;
+                }
+                break;
+        }
 
         // This title is for debugging only. See: dumpsys window
         params.setTitle(forAppSidebar ? "RecentAppSidebar" : "RecentControlPanel");
@@ -1008,6 +1021,9 @@ public class RecentController implements RecentPanelView.OnExitListener,
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.SLIM_RECENTS_BLACKLIST_VALUES),
                     false, this, UserHandle.USER_ALL);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.SLIM_RECENT_ENTER_EXIT_ANIMATION),
+                    false, this, UserHandle.USER_ALL);
             update(true);
         }
 
@@ -1031,6 +1047,10 @@ public class RecentController implements RecentPanelView.OnExitListener,
             // Get user gravity.
             mUserGravity = Settings.System.getIntForUser(
                     resolver, Settings.System.RECENT_PANEL_GRAVITY, Gravity.END,
+                    UserHandle.USER_CURRENT);
+
+            mEnterExitAnimation = Settings.System.getIntForUser(
+                    resolver, Settings.System.SLIM_RECENT_ENTER_EXIT_ANIMATION, 0,
                     UserHandle.USER_CURRENT);
 
             mAicpEmptyView = Settings.System.getIntForUser(resolver,
