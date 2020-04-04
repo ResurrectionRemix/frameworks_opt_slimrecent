@@ -104,7 +104,7 @@ import com.android.systemui.statusbar.phone.StatusBar;
 
 import static com.android.systemui.statusbar.phone.StatusBar.SYSTEM_DIALOG_REASON_RECENT_APPS;
 
-import com.aicp.gear.util.ImageHelper;
+import com.android.internal.util.rr.ImageHelper;
 
 /**
  * Our main recents controller.
@@ -173,7 +173,7 @@ public class RecentController implements RecentPanelView.OnExitListener,
 
     private float mScaleFactor;
 
-    private boolean mAicpEmptyView;
+    private boolean mRREmptyView;
 
     // Main panel view.
     private RecentPanelView mRecentPanelView;
@@ -407,7 +407,7 @@ public class RecentController implements RecentPanelView.OnExitListener,
             backgroundColor = mContext.getResources().getColor(R.color.recent_background);
         }
 
-        if (mAicpEmptyView) {
+        if (mRREmptyView) {
             // AICP empty recents drawable
             AnimatedVectorDrawable vd = (AnimatedVectorDrawable)
                     mContext.getResources().getDrawable(R.drawable.aicp_no_recents_slim, null);
@@ -430,7 +430,7 @@ public class RecentController implements RecentPanelView.OnExitListener,
         int padding = mContext.getResources().getDimensionPixelSize(R.dimen.slim_recents_elevation);
         if (mMainGravity == Gravity.START) {
             mRecentContainer.setPadding(0, 0, padding, 0);
-            mEmptyRecentView.setRotation(mAicpEmptyView ? 0 : 180);
+            mEmptyRecentView.setRotation(mRREmptyView ? 0 : 180);
         } else {
             mRecentContainer.setPadding(padding, 0, 0, 0);
             mEmptyRecentView.setRotation(0);
@@ -968,7 +968,7 @@ public class RecentController implements RecentPanelView.OnExitListener,
                     Settings.System.RECENT_PANEL_BG_COLOR),
                     false, this, UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.System.getUriFor(
-                    Settings.System.SLIM_RECENT_AICP_EMPTY_DRAWABLE),
+                    Settings.System.SLIM_RECENT_RR_EMPTY_DRAWABLE),
                     false, this, UserHandle.USER_ALL);
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.USE_RECENT_APP_SIDEBAR),
@@ -1050,8 +1050,8 @@ public class RecentController implements RecentPanelView.OnExitListener,
                     resolver, Settings.System.SLIM_RECENT_ENTER_EXIT_ANIMATION, 0,
                     UserHandle.USER_CURRENT);
 
-            mAicpEmptyView = Settings.System.getIntForUser(resolver,
-                    Settings.System.SLIM_RECENT_AICP_EMPTY_DRAWABLE, 1,
+            mRREmptyView = Settings.System.getIntForUser(resolver,
+                    Settings.System.SLIM_RECENT_RR_EMPTY_DRAWABLE, 1,
                     UserHandle.USER_CURRENT) == 1;
 
             // Update colors in RecentPanelView
@@ -1295,7 +1295,7 @@ public class RecentController implements RecentPanelView.OnExitListener,
                 });
 
                 // Setup animation for empty recent image - fade in.
-                if (!hasFavorite && !mAicpEmptyView) {
+                if (!hasFavorite && !mRREmptyView) {
                     mEmptyRecentView.setAlpha(0.0f);
                     mEmptyRecentView.setVisibility(View.VISIBLE);
                 }
@@ -1311,7 +1311,7 @@ public class RecentController implements RecentPanelView.OnExitListener,
                 // Start all ValueAnimator animations
                 // and listen onAnimationEnd to prepare the views for the next call.
                 AnimatorSet animationSet = new AnimatorSet();
-                if (hasFavorite || mAicpEmptyView) {
+                if (hasFavorite || mRREmptyView) {
                     animationSet.playTogether(animation1, animation3);
                 } else {
                     animationSet.playTogether(animation1, animation2, animation3, animation4);
