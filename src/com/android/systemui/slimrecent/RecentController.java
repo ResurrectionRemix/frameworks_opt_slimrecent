@@ -408,9 +408,8 @@ public class RecentController implements RecentPanelView.OnExitListener,
         }
 
         if (mRREmptyView) {
-            // AICP empty recents drawable
-            AnimatedVectorDrawable vd = (AnimatedVectorDrawable)
-                    mContext.getResources().getDrawable(R.drawable.aicp_no_recents_slim, null);
+            VectorDrawable vd = (VectorDrawable)
+                    mContext.getResources().getDrawable(R.drawable.rr_main_conf_icon);
             vd.setTint(tintColor);
             mEmptyRecentView.setImageDrawable(vd);
         } else {
